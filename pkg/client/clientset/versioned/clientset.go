@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"net/http"
 
-	tfv1beta1 "github.com/galleybytes/terraform-operator/pkg/client/clientset/versioned/typed/tf/v1beta1"
+	tfv1beta1 "github.com/galleybytes/tofu-kubed/pkg/client/clientset/versioned/typed/tf/v1beta1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

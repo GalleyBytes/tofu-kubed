@@ -1,74 +1,23 @@
-# Terraform Operator
+# Tofu Kubed
 
-> A Kubernetes CRD and Controller to handle Terraform operations by generating k8s pods catered to perform Terraform workflows
-
-<p align="center">
-<img src="https://s3.amazonaws.com/classic.isaaguilar.com/tfo-worm-logo-text.png" alt="Terraform Operator Logo"></img>
-</p>
+> A Kubernetes CRD and Controller to handle Tofu operations by generating k8s pods catered to perform Tofu workflows
 
 
-## What is terraform-operator?
+## WIP
+
+This repo is a fork of [terraform-operator](https://github.com/galleybytes/terraform-operator) and is still a work in progress
+
+## What is tofu-kubed?
 
 This project is:
 
-- A way to run Terraform in Kubernetes by defining Terraform deployments as Kubernetes manifests
-- A controller that configures and starts [Terraform Workflows](http://tf.galleybytes.com/docs/architecture/workflow/) when it sees changes to the Kubernetes manifest
-- Workflow runner pods that execute Terraform plan/apply and other user-defined scripts
+- A way to run Tofu in Kubernetes by defining Tofu deployments as Kubernetes manifests
+- A controller that configures and starts [Tofu Workflows](http://tf.galleybytes.com/docs/architecture/workflow/) when it sees changes to the Kubernetes manifest
+- Workflow runner pods that execute Tofu plan/apply and other user-defined scripts
 
 This project is not:
 
-- An HCL to YAML converter or vice versa
-- A Terraform Module or Registry
-
-## Installation
-
-The preferred method is to use helm. See [Install using Helm](http://tf.galleybytes.com/docs/getting-started/installation/#install-using-helm) on the docs.
-
-Another simple method is to install the resources under `deploy` & `deploy/crds`
-
-```bash
-git clone https://github.com/galleybytes/terraform-operator.git
-cd terraform-operator
-kubectl apply -f deploy/bundles/v0.14.0/v0.14.0.yaml
-```
-
-See [more installation options](http://tf.galleybytes.com/docs/getting-started/installation/).
-
-## Docs
-
-Visit [http://tf.galleybytes.com](http://tf.galleybytes.com) to read the docs.
-
-<p align="center">
-<img src="https://s3.amazonaws.com/classic.isaaguilar.com/tfo-workflow-diagramv2.png" alt="Terraform Operator Workflow Diagram"></img>
-</p>
-
-
-## Related Projects and Tools
-
-Here are some other projects that enhance the experience of Terraform Operator.
-
-
-### Debug With `tfo` CLI
-
-Terraform is great, but every now and then, a module takes a turn for the worse and the workflow fails. When this happens, a terraform workflow will need to be "debugged."
-
-Fortunately, the `tfo` cli (https://github.com/isaaguilar/terraform-operator-cli) can be used to start a debug pod which is connected directly to the same terraform session the workflow runs.  It does so by reading the TFO resource and generates a pod with the same environment vars, ConfigMaps, Secrets, and ServiceAccount as a regular workflow pod. Then it drops the user in a shell directly in the main module.
-
-```bash
-tfo debug my-tfo-resource --namespace default
-```
-
-The user should be ready to rock-n-roll and show off their mad debugging skills.
-
-```bash
-Connecting to my-tfo-resource-ca6ajn94-v2-debug-qmjd5.....
-
-Try running 'terraform init'
-
-/home/tfo-runner/generations/2/main$
-```
-
-Happy debugging!
+- A Tofu Module or Registry
 
 
 ## Join the Community

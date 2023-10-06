@@ -16,7 +16,7 @@ import (
 	"k8s.io/kube-openapi/pkg/validation/spec"
 )
 
-var pkgpath = "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1"
+var pkgpath = "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1"
 
 // +kubebuilder:object:generate=false
 type Definition struct {

@@ -19,9 +19,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/galleybytes/terraform-operator/pkg/client/clientset/versioned"
-	tfv1beta1 "github.com/galleybytes/terraform-operator/pkg/client/clientset/versioned/typed/tf/v1beta1"
-	faketfv1beta1 "github.com/galleybytes/terraform-operator/pkg/client/clientset/versioned/typed/tf/v1beta1/fake"
+	clientset "github.com/galleybytes/tofu-kubed/pkg/client/clientset/versioned"
+	tfv1beta1 "github.com/galleybytes/tofu-kubed/pkg/client/clientset/versioned/typed/tf/v1beta1"
+	faketfv1beta1 "github.com/galleybytes/tofu-kubed/pkg/client/clientset/versioned/typed/tf/v1beta1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

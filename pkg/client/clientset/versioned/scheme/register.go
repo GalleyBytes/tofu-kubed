@@ -19,7 +19,7 @@ limitations under the License.
 package scheme
 
 import (
-	tfv1beta1 "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1"
+	tfv1beta1 "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

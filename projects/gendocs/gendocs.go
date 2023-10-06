@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1"
+	"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1"
 )
 
 var (

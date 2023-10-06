@@ -1,4 +1,4 @@
-PKG ?= github.com/galleybytes/terraform-operator
+PKG ?= github.com/galleybytes/tofu-kubed
 DOCKER_REPO ?= ghcr.io/galleybytes
 IMAGE_NAME ?= terraform-operator
 DEPLOYMENT ?= ${IMAGE_NAME}
@@ -83,7 +83,7 @@ generate: controller-gen
 	$(CONTROLLER_GEN) object:headerFile="hack/boilerplate.go.txt" paths="./..."
 
 openapi-gen: openapi-gen-bin
-	$(OPENAPI_GEN) --logtostderr=true -o "" -i github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1 -O zz_generated.openapi -p pkg/apis/tf/v1beta1 -h ./hack/boilerplate.go.txt -r "-"
+	$(OPENAPI_GEN) --logtostderr=true -o "" -i github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1 -O zz_generated.openapi -p pkg/apis/tf/v1beta1 -h ./hack/boilerplate.go.txt -r "-"
 
 docs:
 	/bin/bash hack/docs.sh ${VERSION}

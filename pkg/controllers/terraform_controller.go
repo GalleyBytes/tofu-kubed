@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/MakeNowJust/heredoc"
-	tfv1beta1 "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1"
-	"github.com/galleybytes/terraform-operator/pkg/utils"
+	tfv1beta1 "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1"
+	"github.com/galleybytes/tofu-kubed/pkg/utils"
 	"github.com/go-logr/logr"
 	getter "github.com/hashicorp/go-getter"
 	localcache "github.com/patrickmn/go-cache"

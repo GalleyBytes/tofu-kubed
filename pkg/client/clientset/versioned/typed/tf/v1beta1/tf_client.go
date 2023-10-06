@@ -21,8 +21,8 @@ package v1beta1
 import (
 	"net/http"
 
-	v1beta1 "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1"
-	"github.com/galleybytes/terraform-operator/pkg/client/clientset/versioned/scheme"
+	v1beta1 "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1"
+	"github.com/galleybytes/tofu-kubed/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

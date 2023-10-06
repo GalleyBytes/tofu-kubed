@@ -30,29 +30,29 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.AWSCredentials":    schema_pkg_apis_tf_v1beta1_AWSCredentials(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ConfigMapSelector": schema_pkg_apis_tf_v1beta1_ConfigMapSelector(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Credentials":       schema_pkg_apis_tf_v1beta1_Credentials(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitHTTPS":          schema_pkg_apis_tf_v1beta1_GitHTTPS(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitSCM":            schema_pkg_apis_tf_v1beta1_GitSCM(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitSSH":            schema_pkg_apis_tf_v1beta1_GitSSH(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ImageConfig":       schema_pkg_apis_tf_v1beta1_ImageConfig(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Images":            schema_pkg_apis_tf_v1beta1_Images(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Module":            schema_pkg_apis_tf_v1beta1_Module(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Plugin":            schema_pkg_apis_tf_v1beta1_Plugin(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ProxyOpts":         schema_pkg_apis_tf_v1beta1_ProxyOpts(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ResourceDownload":  schema_pkg_apis_tf_v1beta1_ResourceDownload(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SCMAuthMethod":     schema_pkg_apis_tf_v1beta1_SCMAuthMethod(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SSHKeySecretRef":   schema_pkg_apis_tf_v1beta1_SSHKeySecretRef(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SecretNameRef":     schema_pkg_apis_tf_v1beta1_SecretNameRef(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Setup":             schema_pkg_apis_tf_v1beta1_Setup(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Stage":             schema_pkg_apis_tf_v1beta1_Stage(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.StageScript":       schema_pkg_apis_tf_v1beta1_StageScript(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TaskOption":        schema_pkg_apis_tf_v1beta1_TaskOption(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Terraform":         schema_pkg_apis_tf_v1beta1_Terraform(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TerraformSpec":     schema_pkg_apis_tf_v1beta1_TerraformSpec(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TerraformStatus":   schema_pkg_apis_tf_v1beta1_TerraformStatus(ref),
-		"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TokenSecretRef":    schema_pkg_apis_tf_v1beta1_TokenSecretRef(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.AWSCredentials":    schema_pkg_apis_tf_v1beta1_AWSCredentials(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ConfigMapSelector": schema_pkg_apis_tf_v1beta1_ConfigMapSelector(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Credentials":       schema_pkg_apis_tf_v1beta1_Credentials(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitHTTPS":          schema_pkg_apis_tf_v1beta1_GitHTTPS(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitSCM":            schema_pkg_apis_tf_v1beta1_GitSCM(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitSSH":            schema_pkg_apis_tf_v1beta1_GitSSH(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ImageConfig":       schema_pkg_apis_tf_v1beta1_ImageConfig(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Images":            schema_pkg_apis_tf_v1beta1_Images(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Module":            schema_pkg_apis_tf_v1beta1_Module(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Plugin":            schema_pkg_apis_tf_v1beta1_Plugin(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ProxyOpts":         schema_pkg_apis_tf_v1beta1_ProxyOpts(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ResourceDownload":  schema_pkg_apis_tf_v1beta1_ResourceDownload(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SCMAuthMethod":     schema_pkg_apis_tf_v1beta1_SCMAuthMethod(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SSHKeySecretRef":   schema_pkg_apis_tf_v1beta1_SSHKeySecretRef(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SecretNameRef":     schema_pkg_apis_tf_v1beta1_SecretNameRef(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Setup":             schema_pkg_apis_tf_v1beta1_Setup(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Stage":             schema_pkg_apis_tf_v1beta1_Stage(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.StageScript":       schema_pkg_apis_tf_v1beta1_StageScript(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TaskOption":        schema_pkg_apis_tf_v1beta1_TaskOption(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Terraform":         schema_pkg_apis_tf_v1beta1_Terraform(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TerraformSpec":     schema_pkg_apis_tf_v1beta1_TerraformSpec(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TerraformStatus":   schema_pkg_apis_tf_v1beta1_TerraformStatus(ref),
+		"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TokenSecretRef":    schema_pkg_apis_tf_v1beta1_TokenSecretRef(ref),
 	}
 }
 
@@ -121,14 +121,14 @@ func schema_pkg_apis_tf_v1beta1_Credentials(ref common.ReferenceCallback) common
 						SchemaProps: spec.SchemaProps{
 							Description: "SecretNameRef will load environment variables into the terraform runner from a kubernetes secret",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SecretNameRef"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SecretNameRef"),
 						},
 					},
 					"aws": {
 						SchemaProps: spec.SchemaProps{
 							Description: "AWSCredentials contains the different methods to load AWS credentials for the Terraform AWS Provider. If using AWS_ACCESS_KEY_ID and/or environment variables for credentials, use fromEnvs.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.AWSCredentials"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.AWSCredentials"),
 						},
 					},
 					"serviceAccountAnnotations": {
@@ -151,7 +151,7 @@ func schema_pkg_apis_tf_v1beta1_Credentials(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.AWSCredentials", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SecretNameRef"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.AWSCredentials", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SecretNameRef"},
 	}
 }
 
@@ -170,7 +170,7 @@ func schema_pkg_apis_tf_v1beta1_GitHTTPS(ref common.ReferenceCallback) common.Op
 					},
 					"tokenSecretRef": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TokenSecretRef"),
+							Ref: ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TokenSecretRef"),
 						},
 					},
 				},
@@ -178,7 +178,7 @@ func schema_pkg_apis_tf_v1beta1_GitHTTPS(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TokenSecretRef"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TokenSecretRef"},
 	}
 }
 
@@ -191,19 +191,19 @@ func schema_pkg_apis_tf_v1beta1_GitSCM(ref common.ReferenceCallback) common.Open
 				Properties: map[string]spec.Schema{
 					"ssh": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitSSH"),
+							Ref: ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitSSH"),
 						},
 					},
 					"https": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitHTTPS"),
+							Ref: ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitHTTPS"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitHTTPS", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitSSH"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitHTTPS", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitSSH"},
 	}
 }
 
@@ -222,7 +222,7 @@ func schema_pkg_apis_tf_v1beta1_GitSSH(ref common.ReferenceCallback) common.Open
 					},
 					"sshKeySecretRef": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SSHKeySecretRef"),
+							Ref: ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SSHKeySecretRef"),
 						},
 					},
 				},
@@ -230,7 +230,7 @@ func schema_pkg_apis_tf_v1beta1_GitSSH(ref common.ReferenceCallback) common.Open
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SSHKeySecretRef"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SSHKeySecretRef"},
 	}
 }
 
@@ -273,26 +273,26 @@ func schema_pkg_apis_tf_v1beta1_Images(ref common.ReferenceCallback) common.Open
 					"terraform": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Terraform task type container image definition",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ImageConfig"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ImageConfig"),
 						},
 					},
 					"script": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Script task type container image definition",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ImageConfig"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ImageConfig"),
 						},
 					},
 					"setup": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Setup task type container image definition",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ImageConfig"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ImageConfig"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ImageConfig"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ImageConfig"},
 	}
 }
 
@@ -320,13 +320,13 @@ func schema_pkg_apis_tf_v1beta1_Module(ref common.ReferenceCallback) common.Open
 					"configMapSelector": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ConfigMapSelector is an option that points to an existing configmap on the executing cluster. The configmap is expected to contains has the terraform module (ie keys ending with .tf). The configmap would need to live in the same namespace as the tfo resource.\n\nThe configmap is mounted as a volume and put into the TFO_MAIN_MODULE path by the setup task.\n\nIf a key is defined, the value is used as the module else the entirety of the data objects will be loaded as files.",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ConfigMapSelector"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ConfigMapSelector"),
 						},
 					},
 					"configMapSeclector": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Typoed form of configMapSelector",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ConfigMapSelector"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ConfigMapSelector"),
 						},
 					},
 					"inline": {
@@ -340,7 +340,7 @@ func schema_pkg_apis_tf_v1beta1_Module(ref common.ReferenceCallback) common.Open
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ConfigMapSelector"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ConfigMapSelector"},
 	}
 }
 
@@ -418,7 +418,7 @@ func schema_pkg_apis_tf_v1beta1_ProxyOpts(ref common.ReferenceCallback) common.O
 					"sshKeySecretRef": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SSHKeySecretRef"),
+							Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SSHKeySecretRef"),
 						},
 					},
 				},
@@ -426,7 +426,7 @@ func schema_pkg_apis_tf_v1beta1_ProxyOpts(ref common.ReferenceCallback) common.O
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SSHKeySecretRef"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SSHKeySecretRef"},
 	}
 }
 
@@ -483,7 +483,7 @@ func schema_pkg_apis_tf_v1beta1_SCMAuthMethod(ref common.ReferenceCallback) comm
 					"git": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Git configuration options for auth methods of git",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitSCM"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitSCM"),
 						},
 					},
 				},
@@ -491,7 +491,7 @@ func schema_pkg_apis_tf_v1beta1_SCMAuthMethod(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.GitSCM"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.GitSCM"},
 	}
 }
 
@@ -589,7 +589,7 @@ func schema_pkg_apis_tf_v1beta1_Setup(ref common.ReferenceCallback) common.OpenA
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ResourceDownload"),
+										Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ResourceDownload"),
 									},
 								},
 							},
@@ -606,7 +606,7 @@ func schema_pkg_apis_tf_v1beta1_Setup(ref common.ReferenceCallback) common.OpenA
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ResourceDownload"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ResourceDownload"},
 	}
 }
 
@@ -718,7 +718,7 @@ func schema_pkg_apis_tf_v1beta1_StageScript(ref common.ReferenceCallback) common
 					"configMapSelector": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ConfigMapSelector reads a in a script from a configmap name+key",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ConfigMapSelector"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ConfigMapSelector"),
 						},
 					},
 					"inline": {
@@ -732,7 +732,7 @@ func schema_pkg_apis_tf_v1beta1_StageScript(ref common.ReferenceCallback) common
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ConfigMapSelector"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ConfigMapSelector"},
 	}
 }
 
@@ -848,7 +848,7 @@ func schema_pkg_apis_tf_v1beta1_TaskOption(ref common.ReferenceCallback) common.
 						SchemaProps: spec.SchemaProps{
 							Description: "Script is used to configure the source of the task's executable script.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.StageScript"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.StageScript"),
 						},
 					},
 					"restartPolicy": {
@@ -891,7 +891,7 @@ func schema_pkg_apis_tf_v1beta1_TaskOption(ref common.ReferenceCallback) common.
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.StageScript", "k8s.io/api/core/v1.EnvFromSource", "k8s.io/api/core/v1.EnvVar", "k8s.io/api/core/v1.ResourceRequirements", "k8s.io/api/core/v1.Volume", "k8s.io/api/core/v1.VolumeMount", "k8s.io/api/rbac/v1.PolicyRule"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.StageScript", "k8s.io/api/core/v1.EnvFromSource", "k8s.io/api/core/v1.EnvVar", "k8s.io/api/core/v1.ResourceRequirements", "k8s.io/api/core/v1.Volume", "k8s.io/api/core/v1.VolumeMount", "k8s.io/api/rbac/v1.PolicyRule"},
 	}
 }
 
@@ -925,20 +925,20 @@ func schema_pkg_apis_tf_v1beta1_Terraform(ref common.ReferenceCallback) common.O
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TerraformSpec"),
+							Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TerraformSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TerraformStatus"),
+							Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TerraformStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TerraformSpec", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TerraformStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TerraformSpec", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TerraformStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1035,7 +1035,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Credentials"),
+										Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Credentials"),
 									},
 								},
 							},
@@ -1051,7 +1051,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 					"sshTunnel": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SSHTunnel can be defined for pulling from scm sources that cannot be accessed by the network the operator/runner runs in. An example is enterprise-Github servers running on a private network.",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ProxyOpts"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ProxyOpts"),
 						},
 					},
 					"scmAuthMethods": {
@@ -1062,7 +1062,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SCMAuthMethod"),
+										Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SCMAuthMethod"),
 									},
 								},
 							},
@@ -1071,20 +1071,20 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 					"images": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Images describes the container images used by task classes.",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Images"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Images"),
 						},
 					},
 					"setup": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Setup is configuration generally used once in the setup task",
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Setup"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Setup"),
 						},
 					},
 					"terraformModule": {
 						SchemaProps: spec.SchemaProps{
 							Description: "TerraformModule is used to configure the source of the terraform module.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Module"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Module"),
 						},
 					},
 					"terraformVersion": {
@@ -1111,7 +1111,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TaskOption"),
+										Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TaskOption"),
 									},
 								},
 							},
@@ -1126,7 +1126,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Plugin"),
+										Ref:     ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Plugin"),
 									},
 								},
 							},
@@ -1144,7 +1144,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformSpec(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Credentials", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Images", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Module", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Plugin", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.ProxyOpts", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.SCMAuthMethod", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Setup", "github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.TaskOption", "k8s.io/apimachinery/pkg/api/resource.Quantity"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Credentials", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Images", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Module", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Plugin", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.ProxyOpts", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.SCMAuthMethod", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Setup", "github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.TaskOption", "k8s.io/apimachinery/pkg/api/resource.Quantity"},
 	}
 }
 
@@ -1199,7 +1199,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformStatus(ref common.ReferenceCallback) co
 						SchemaProps: spec.SchemaProps{
 							Description: "Stage stores information about the current stage",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Stage"),
+							Ref:         ref("github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Stage"),
 						},
 					},
 					"pluginsStarted": {
@@ -1222,7 +1222,7 @@ func schema_pkg_apis_tf_v1beta1_TerraformStatus(ref common.ReferenceCallback) co
 			},
 		},
 		Dependencies: []string{
-			"github.com/galleybytes/terraform-operator/pkg/apis/tf/v1beta1.Stage"},
+			"github.com/galleybytes/tofu-kubed/pkg/apis/tf/v1beta1.Stage"},
 	}
 }
 
